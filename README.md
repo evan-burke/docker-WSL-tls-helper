@@ -1,3 +1,7 @@
+
+WORK IN PROGRESS - instead of specifying server/client on command line, automatically place TLS certs in appropriate directories for use with Docker client running within WSL, connecting to a local instance of Docker for Windows. 
+
+
 # frntn/docker-tls-helper
 
 One command to generate the numerous certificates and keys required to [protect the Docker daemon socket](https://docs.docker.com/engine/security/https/).
