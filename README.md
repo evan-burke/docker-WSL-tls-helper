@@ -11,7 +11,10 @@ One command to generate the numerous certificates and keys required to [protect 
 Setup `SRV_SUBJ` and `CLT_SUBJ` environment variables and execute the script :
 
 ```bash
+# old:
 curl -sSL https://raw.githubusercontent.com/frntn/docker-tls-helper/master/dockertls.sh | SRV_SUBJ="/CN=remote.example.com" CLT_SUBJ="/CN=Docker Admin CLI" bash
+
+curl -sSL https://raw.githubusercontent.com/evan-burke/docker-WSL-tls-helper/master/dockertls.sh | bash
 ```
 
 You can additionally Setup `SRV_SAN` environment variable to access your docker server from multiple endpoints :
